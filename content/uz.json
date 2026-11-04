@@ -542,6 +542,12 @@
         "url": "https://taxaudit.uz",
         "logo": "partner-taxaudit.webp",
         "d": "Soliq maslahatchilari tashkiloti"
+      },
+      {
+        "name": "FinRep",
+        "url": "https://finrep.uz",
+        "logo": "partner-finrep.webp",
+        "d": "MHXS (IFRS) bo'yicha konsalting kompaniyasi"
       }
     ]
   },

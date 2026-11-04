@@ -542,6 +542,12 @@
         "url": "https://taxaudit.uz",
         "logo": "partner-taxaudit.webp",
         "d": "Организация налоговых консультантов"
+      },
+      {
+        "name": "FinRep",
+        "url": "https://finrep.uz",
+        "logo": "partner-finrep.webp",
+        "d": "Консалтинговая компания по МСФО (IFRS)"
       }
     ]
   },
