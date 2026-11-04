@@ -98,7 +98,7 @@
         "schedule": "Haftada 3 marta, 2 soatdan",
         "start": "",
         "price": "",
-        "teacher": "teacher-1",
+        "teacher": "abror-hasanov",
         "audience": [
           "Buxgalteriyani noldan o'rganmoqchi bo'lganlar",
           "Iqtisodiyot yo'nalishidagi talabalar",
@@ -149,7 +149,7 @@
         "schedule": "Haftada 3 marta, 2 soatdan",
         "start": "",
         "price": "",
-        "teacher": "teacher-2",
+        "teacher": "olim-chulliyev",
         "audience": [
           "Buxgalteriya asoslarini biladiganlar",
           "1C ga o'tayotgan korxona xodimlari",
@@ -195,7 +195,7 @@
         "schedule": "Haftada 3 marta, 2 soatdan",
         "start": "",
         "price": "",
-        "teacher": "teacher-1",
+        "teacher": "abror-hasanov",
         "audience": [
           "Amaliyotchi buxgalterlar",
           "Bosh buxgalter bo'lishni rejalashtirganlar",
@@ -245,7 +245,7 @@
         "schedule": "Haftada 2 marta, 3 soatdan",
         "start": "",
         "price": "",
-        "teacher": "teacher-3",
+        "teacher": "abror-hasanov",
         "audience": [
           "Tajribali buxgalterlar va moliyachilar",
           "MHXS ga o'tayotgan korxonalar xodimlari",
@@ -295,7 +295,7 @@
         "schedule": "Haftada 3 marta, 2 soatdan",
         "start": "",
         "price": "",
-        "teacher": "teacher-2",
+        "teacher": "",
         "audience": [
           "Buxgalterlar va iqtisodchilar",
           "Moliya bo'limi xodimlari",
@@ -332,50 +332,37 @@
     "lead": "Darslarni kundalik ishida buxgalteriya, audit va soliq bilan shug'ullanadigan mutaxassislar olib boradi.",
     "items": [
       {
-        "id": "teacher-1",
-        "sample": true,
-        "name": "O'qituvchi ismi",
-        "role": "Bosh buxgalter, soliq maslahatchisi",
-        "exp": "10 yildan ortiq tajriba",
+        "id": "abror-hasanov",
+        "name": "Abror Hasanov",
+        "role": "Auditor, soliq maslahatchisi · CAP, ACCA DipIFR",
+        "exp": "15 yildan ortiq tajriba",
         "tags": [
-          "Buxgalteriya hisobi",
-          "Soliqlar"
+          "Boshlang'ich buxgalteriya",
+          "Bosh buxgalter",
+          "MHXS asoslari",
+          "Soliq",
+          "DipIFR"
         ],
         "bio": [
-          "O'qituvchi haqida qisqacha ma'lumot: ta'limi, ish joylari, sertifikatlari va qaysi kurslarni olib borishi."
+          "ABR-CONSULTING buxgalteriya va maslahat kompaniyasi asoschisi. 15 yildan ortiq tajribaga ega auditor va soliq maslahatchisi.",
+          "CAP va ACCA DipIFR sertifikatlari egasi. Boshlang'ich buxgalteriya, Bosh buxgalter, MHXS asoslari, Soliq va DipIFR kurslarini olib boradi."
         ],
-        "photo": ""
+        "photo": "teacher-abror-hasanov.webp"
       },
       {
-        "id": "teacher-2",
-        "sample": true,
-        "name": "O'qituvchi ismi",
-        "role": "1C va Excel bo'yicha mutaxassis",
+        "id": "olim-chulliyev",
+        "name": "Olim Cho'lliyev",
+        "role": "Bosh buxgalter, soliq maslahatchisi · ACCA DipIFR",
         "exp": "8 yildan ortiq tajriba",
         "tags": [
-          "1C: Buxgalteriya",
-          "Excel"
+          "1C",
+          "Soliq"
         ],
         "bio": [
-          "O'qituvchi haqida qisqacha ma'lumot: ta'limi, ish joylari, sertifikatlari va qaysi kurslarni olib borishi."
+          "8 yildan ortiq tajribaga ega amaliyotchi bosh buxgalter, ACCA DipIFR.",
+          "Soliq yukini optimallashtirish, soliq tekshiruvlariga tayyorlash va soliq masalalari bo'yicha maslahat beradi. 1C va Soliq kurslarini olib boradi."
         ],
-        "photo": ""
-      },
-      {
-        "id": "teacher-3",
-        "sample": true,
-        "name": "O'qituvchi ismi",
-        "role": "Auditor, MHXS bo'yicha mutaxassis",
-        "exp": "12 yildan ortiq tajriba",
-        "tags": [
-          "MHXS (IFRS)",
-          "ACCA DipIFR",
-          "Audit"
-        ],
-        "bio": [
-          "O'qituvchi haqida qisqacha ma'lumot: ta'limi, ish joylari, sertifikatlari va qaysi kurslarni olib borishi."
-        ],
-        "photo": ""
+        "photo": "teacher-olim-chulliyev.webp"
       }
     ]
   },
