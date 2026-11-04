@@ -141,6 +141,17 @@ section { padding-block: 88px }
 .groups svg { grid-row: 1 / 3; grid-column: 2; opacity: .8 }
 @media (max-width: 900px) { .hero .wrap { grid-template-columns: 1fr; gap: 40px } .hero { padding-block: 52px 60px } }
 
+/* gallery */
+.gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 220px; gap: 12px; margin-top: 32px }
+.gallery figure { margin: 0; border-radius: 14px; overflow: hidden; background: var(--line) }
+.gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s }
+.gallery a:hover img { transform: scale(1.03) }
+.gallery a { display: block; height: 100% }
+.gallery figure:first-child { grid-column: span 2; grid-row: span 2 }
+.gallery.full figure:nth-child(6) { grid-column: span 2 }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 170px } .gallery.full figure:nth-child(6) { grid-column: auto } }
+@media (max-width: 520px) { .gallery { grid-auto-rows: 130px; gap: 8px } }
+
 /* features */
 .features { border-bottom: 1px solid var(--line); padding-block: 56px }
 .feat { display: grid; gap: 8px; align-content: start }
@@ -466,6 +477,11 @@ function ctaBand(t) {
   </div></section>`;
 }
 
+function gallery(t, keys, full) {
+  const items = keys ? keys.map((k) => t.gallery.items.find((x) => x.f === k)) : t.gallery.items;
+  return `<div class="gallery${full ? ' full' : ''}">${items.map((x, i) => `<figure><a href="${asset(`photos/${x.f}.webp`)}" target="_blank" rel="noopener"><img src="${asset(`photos/${x.f}.webp`)}" alt="${esc(x.alt)}" width="${x.w}" height="${x.h}" loading="${i < 1 && !full ? 'eager' : 'lazy'}" decoding="async"></a></figure>`).join('')}</div>`;
+}
+
 function pageHead(t, eyebrow, title, lead, extra = '') {
   return `<section class="page-head"><div class="wrap">
     <span class="eyebrow">${esc(eyebrow)}</span>
@@ -506,6 +522,10 @@ const PAGES = {
   </aside>
 </div></section>
 <section class="features"><div class="wrap grid g4">${h.features.map((f, i) => `<div class="feat"><b>0${i + 1}</b><h3>${esc(f.t)}</h3><p>${esc(f.d)}</p></div>`).join('')}</div></section>
+<section><div class="wrap">
+  <div class="head-row"><div class="head"><span class="eyebrow">${esc(t.gallery.eyebrow)}</span><h2 class="h2">${esc(t.gallery.title)}</h2><p class="lead">${esc(t.gallery.lead)}</p></div><a class="more-link" href="${href(t, '/about/')}">${esc(t.nav.about)} ${icon('arrow', 18)}</a></div>
+  ${gallery(t, t.gallery.home, false)}
+</div></section>
 <section><div class="wrap">
   <div class="head-row"><div class="head"><span class="eyebrow">${esc(t.courses.eyebrow)}</span><h2 class="h2">${esc(h.coursesTitle)}</h2><p class="lead">${esc(h.coursesLead)}</p></div><a class="more-link" href="${href(t, '/courses/')}">${esc(t.ui.allCourses)} ${icon('arrow', 18)}</a></div>
   <div class="grid g3">${t.courses.items.slice(0, 3).map((c) => courseCard(t, c)).join('')}</div>
@@ -549,6 +569,10 @@ ${ctaBand(t)}`,
     <div class="legal"><h2>${esc(a.legalTitle)}</h2><dl class="cl" style="margin-top:14px">${a.legal.map((x) => `<div><dt>${esc(x.k)}</dt><dd>${x.v ? esc(x.v) : soon(t)}</dd></div>`).join('')}</dl></div>
   </div>
   <dl class="values">${a.values.map((v) => `<div><dt>${esc(v.t)}</dt><dd>${esc(v.d)}</dd></div>`).join('')}</dl>
+</div></section>
+<section style="background:var(--surface);border-top:1px solid var(--line)"><div class="wrap">
+  <div class="head"><span class="eyebrow">${esc(t.gallery.eyebrow)}</span><h2 class="h2">${esc(t.gallery.title)}</h2><p class="lead">${esc(t.gallery.lead)}</p></div>
+  ${gallery(t, null, true)}
 </div></section>
 ${ctaBand(t)}`;
   },
@@ -600,7 +624,7 @@ function orgLd(t) {
     taxID: "308149528",
     url: SITE + '/',
     logo: SITE + '/assets/icon-512.png',
-    image: SITE + '/assets/og.jpg',
+    image: [SITE + '/assets/og.jpg', SITE + '/assets/photos/bino.webp'],
     description: t.meta.description,
     telephone: site.phones[0] ? tel(site.phones[0]) : undefined,
     address: t.contact.address ? { '@type': 'PostalAddress', streetAddress: t.contact.address, addressLocality: t.lang === 'ru' ? 'Ташкент' : 'Toshkent', addressCountry: 'UZ' } : undefined,

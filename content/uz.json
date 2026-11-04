@@ -544,5 +544,67 @@
         "d": "Soliq maslahatchilari tashkiloti"
       }
     ]
+  },
+  "gallery": {
+    "eyebrow": "Markazimiz",
+    "title": "Qanday o'qiymiz",
+    "lead": "Zamonaviy sinflar, amaliy darslar va bitiruvchilarimiz quvonchi.",
+    "items": [
+      {
+        "f": "bino",
+        "w": 1400,
+        "h": 1050,
+        "alt": "FINANCE TEAM o'quv markazi binosi, Muqimiy ko'chasi 41/3"
+      },
+      {
+        "f": "sinf",
+        "w": 1280,
+        "h": 1280,
+        "alt": "Kompyuterli sinfda amaliy mashg'ulot"
+      },
+      {
+        "f": "bitiruvchilar",
+        "w": 1280,
+        "h": 1280,
+        "alt": "Bitiruvchilar sertifikatlari bilan"
+      },
+      {
+        "f": "ma-ruza",
+        "w": 1280,
+        "h": 960,
+        "alt": "ACCA moduli bo'yicha ma'ruza"
+      },
+      {
+        "f": "dars",
+        "w": 1280,
+        "h": 1280,
+        "alt": "Dars jarayoni"
+      },
+      {
+        "f": "sertifikat",
+        "w": 1280,
+        "h": 1280,
+        "alt": "Sertifikat topshirish marosimi"
+      },
+      {
+        "f": "kirish",
+        "w": 960,
+        "h": 1280,
+        "alt": "Markazga kirish eshigi"
+      },
+      {
+        "f": "bino-kechasi",
+        "w": 1400,
+        "h": 1050,
+        "alt": "Markaz binosi kechqurun"
+      }
+    ],
+    "home": [
+      "sinf",
+      "bino",
+      "bitiruvchilar",
+      "ma-ruza",
+      "kirish"
+    ]
   }
 }
