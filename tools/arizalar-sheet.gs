@@ -1,8 +1,7 @@
 // Google Sheets jadvaliga arizalarni yozadigan skript.
 // Jadvalda: Kengaytmalar (Extensions) → Apps Script → shu kodni joylang → Deploy → New deployment → Web app,
 // "Execute as: Me", "Who has access: Anyone" → Deploy. Chiqqan URL ni Vercel'da SHEETS_WEBHOOK_URL ga yozing.
-// Ixtiyoriy: SECRET o'rniga o'z maxfiy so'zingizni yozing va xuddi shu so'zni Vercel'da SHEETS_SECRET ga kiriting.
-// Hech narsa o'zgartirmasangiz ham ishlaydi (sayt standart qiymatni yuboradi).
+// SECRET o'rniga o'zingiz o'ylab topgan maxfiy so'zni yozing va xuddi shu so'zni Vercel'da SHEETS_SECRET ga kiriting.
 const SECRET = 'BU_YERGA_MAXFIY_SOZ';
 
 function doPost(e) {
