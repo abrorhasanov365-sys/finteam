@@ -52,7 +52,8 @@ export default async function handler(req, res) {
     jobs.push(fetch(sheetUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...lead, secret: secret || '' }),
+      // SHEETS_SECRET bo'lmasa skriptdagi standart qiymat yuboriladi (foydalanuvchi maxfiy so'zsiz variantni tanlagan).
+      body: JSON.stringify({ ...lead, secret: secret || 'BU_YERGA_MAXFIY_SOZ' }),
       redirect: 'follow',
     }).then((r) => { if (!r.ok) throw new Error('sheets ' + r.status); }));
   }
