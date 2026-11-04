@@ -125,7 +125,7 @@ section { padding-block: 88px }
 .hero::after { content: ""; position: absolute; right: -60px; top: -40px; width: 460px; height: 650px; background: url(/assets/mark-white.png) no-repeat center / contain; opacity: .07; pointer-events: none }
 .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr .8fr; gap: 56px; align-items: center }
 .hero .eyebrow { color: var(--band-fg) }
-.hero h1 { font-weight: 800; font-size: clamp(34px, 5vw, 60px); line-height: 1.06; margin-top: 18px; max-width: 14ch }
+.hero h1 { font-weight: 800; font-size: clamp(32px, 4.6vw, 56px); line-height: 1.08; max-width: 16ch }
 .hero h1 em { font-style: normal; color: #B9E6E0 }
 .hero .lead { color: var(--band-muted); font-size: 19px }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px }
@@ -471,13 +471,11 @@ function md(src) {
 const PAGES = {
   '/': (t) => {
     const h = t.home;
-    const title = esc(h.title).replace(esc(h.accent), `<em>${esc(h.accent)}</em>`);
+    const title = h.accent ? esc(h.title).replace(esc(h.accent), `<em>${esc(h.accent)}</em>`) : esc(h.title);
     return `
 <section class="hero"><div class="wrap">
   <div>
-    <span class="eyebrow">${esc(h.eyebrow)}</span>
     <h1>${title}</h1>
-    <p class="lead">${esc(h.lead)}</p>
     <div class="actions">
       <a class="btn btn-light" href="${href(t, '/courses/')}">${esc(h.primary)} ${icon('arrow', 18)}</a>
       <a class="btn btn-outline-light" href="${href(t, '/contact/')}">${esc(h.secondary)}</a>
