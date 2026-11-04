@@ -13,5 +13,9 @@
     "facebook": "",
     "youtube": ""
   },
-  "mapUrl": "https://maps.app.goo.gl/nJg2LNeVTQ9pSoNZ6"
+  "mapUrl": "https://maps.app.goo.gl/nJg2LNeVTQ9pSoNZ6",
+  "verification": {
+    "google": "",
+    "yandex": ""
+  }
 }

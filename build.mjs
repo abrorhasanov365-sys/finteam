@@ -590,6 +590,24 @@ function coursePage(t, c) {
 </div></section>`;
 }
 
+function orgLd(t) {
+  const socials = Object.values(site.socials).filter(Boolean);
+  return {
+    '@context': 'https://schema.org',
+    '@type': ['EducationalOrganization', 'LocalBusiness'],
+    name: 'FINANCE TEAM',
+    legalName: site.legalName,
+    url: SITE + '/',
+    logo: SITE + '/assets/icon-512.png',
+    image: SITE + '/assets/og.jpg',
+    description: t.meta.description,
+    telephone: site.phones[0] ? tel(site.phones[0]) : undefined,
+    address: t.contact.address ? { '@type': 'PostalAddress', streetAddress: t.contact.address, addressLocality: t.lang === 'ru' ? 'Ташкент' : 'Toshkent', addressCountry: 'UZ' } : undefined,
+    hasMap: site.mapUrl || undefined,
+    sameAs: socials.length ? socials : undefined,
+  };
+}
+
 const NAV = ['about', 'courses', 'teachers', 'graduates', 'partners', 'contact'];
 
 function layout(t, p, main, title, desc) {
@@ -610,6 +628,8 @@ function layout(t, p, main, title, desc) {
 ${alternates}
 <meta property="og:type" content="website"><meta property="og:site_name" content="FINANCE TEAM"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${SITE}${href(t, p)}"><meta property="og:image" content="${SITE}/assets/og.jpg"><meta property="og:locale" content="${t.lang === 'ru' ? 'ru_RU' : 'uz_UZ'}">
 <meta name="theme-color" content="#00796F">
+${site.verification?.google ? `<meta name="google-site-verification" content="${esc(site.verification.google)}">` : ''}${site.verification?.yandex ? `<meta name="yandex-verification" content="${esc(site.verification.yandex)}">` : ''}
+${p === '/' ? `<script type="application/ld+json">${JSON.stringify(orgLd(t)).replace(/</g, '\\u003c')}</script>` : ''}
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/assets/icon-512.png" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${FONTS}
 <link rel="stylesheet" href="/assets/site.css">
