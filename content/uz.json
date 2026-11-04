@@ -15,7 +15,8 @@
     "contact": "Aloqa",
     "offer": "Ommaviy oferta",
     "cta": "Kursga yozilish",
-    "menu": "Menyu"
+    "menu": "Menyu",
+    "partners": "Hamkorlar"
   },
   "ui": {
     "more": "Batafsil",
@@ -503,5 +504,25 @@
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
     "langLabel": "Til"
+  },
+  "partners": {
+    "eyebrow": "Hamkorlar",
+    "title": "Hamkor tashkilotlar",
+    "lead": "Biz bilan hamkorlikda ishlaydigan buxgalteriya va soliq sohasidagi tashkilotlar.",
+    "visit": "Saytga o'tish",
+    "items": [
+      {
+        "name": "ABR-CONSULTING",
+        "url": "https://abr-consulting.uz",
+        "logo": "partner-abr.webp",
+        "d": "Buxgalteriya hisobi va soliq xizmatlari kompaniyasi"
+      },
+      {
+        "name": "TAXAUDIT",
+        "url": "https://taxaudit.uz",
+        "logo": "partner-taxaudit.webp",
+        "d": "Soliq maslahatchilari tashkiloti"
+      }
+    ]
   }
 }

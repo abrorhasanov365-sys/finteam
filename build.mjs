@@ -289,6 +289,17 @@ a.social:hover { border-color: var(--accent) }
 .cta p { color: var(--band-muted); margin-top: 10px; max-width: 54ch }
 .cta .actions { margin-top: 0 }
 
+/* partners */
+.partner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 24px }
+.partner { list-style: none }
+.partner a { display: grid; height: 100%; grid-template-rows: auto 1fr; background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; text-decoration: none; transition: border-color .15s, transform .15s }
+.partner a:hover { border-color: var(--accent); transform: translateY(-2px) }
+.partner img { width: 100%; height: auto; aspect-ratio: 640 / 369; object-fit: cover; border-bottom: 1px solid var(--line) }
+.partner div { padding: 20px 22px 22px; display: grid; gap: 6px; align-content: start }
+.partner h3 { font-size: 19px; font-weight: 800 }
+.partner p { color: var(--muted); font-size: 15px }
+.partner .go { color: var(--accent); font-weight: 600; font-size: 14px; margin-top: 6px }
+
 /* offer */
 .offer { max-width: 78ch }
 .draft { display: flex; gap: 12px; align-items: flex-start; padding: 16px 18px; border-radius: 12px; background: #FFF5D6; color: #5C4300; border: 1px solid #F0D98A; font-weight: 500; margin-bottom: 36px }
@@ -375,6 +386,14 @@ function gradCard(t, g) {
       ${sampleBadge(t, g.sample)}
     </div>
   </article>`;
+}
+
+function partnerGrid(t) {
+  return `<ul class="partner-grid">${t.partners.items.map((x) => `
+    <li class="partner"><a href="${esc(x.url)}" target="_blank" rel="noopener">
+      <img src="${asset(x.logo)}" alt="${esc(x.name)}" width="640" height="369" loading="lazy">
+      <div><h3>${esc(x.name)}</h3><p>${esc(x.d)}</p><span class="go">${esc(x.url.replace(/^https?:\/\//, ''))} ↗</span></div>
+    </a></li>`).join('')}</ul>`;
 }
 
 function fallbackLinks(t) {
@@ -499,6 +518,10 @@ const PAGES = {
   <div class="head-row"><div class="head"><span class="eyebrow">${esc(t.graduates.eyebrow)}</span><h2 class="h2">${esc(h.graduatesTitle)}</h2><p class="lead">${esc(h.graduatesLead)}</p></div><a class="more-link" href="${href(t, '/graduates/')}">${esc(t.ui.allGraduates)} ${icon('arrow', 18)}</a></div>
   <div class="grid g4">${t.graduates.items.slice(0, 4).map((g) => gradCard(t, g)).join('')}</div>
 </div></section>
+<section style="background:var(--surface);border-top:1px solid var(--line)"><div class="wrap">
+  <div class="head"><span class="eyebrow">${esc(t.partners.eyebrow)}</span><h2 class="h2">${esc(t.partners.title)}</h2><p class="lead">${esc(t.partners.lead)}</p></div>
+  ${partnerGrid(t)}
+</div></section>
 ${ctaBand(t)}`;
   },
 
@@ -511,6 +534,10 @@ ${ctaBand(t)}`,
 
   '/graduates/': (t) => `${pageHead(t, t.graduates.eyebrow, t.graduates.title, t.graduates.lead)}
 <section><div class="wrap grid g4">${t.graduates.items.map((g) => gradCard(t, g)).join('')}</div></section>
+${ctaBand(t)}`,
+
+  '/partners/': (t) => `${pageHead(t, t.partners.eyebrow, t.partners.title, t.partners.lead)}
+<section><div class="wrap">${partnerGrid(t)}</div></section>
 ${ctaBand(t)}`,
 
   '/about/': (t) => {
@@ -563,7 +590,7 @@ function coursePage(t, c) {
 </div></section>`;
 }
 
-const NAV = ['about', 'courses', 'teachers', 'graduates', 'contact'];
+const NAV = ['about', 'courses', 'teachers', 'graduates', 'partners', 'contact'];
 
 function layout(t, p, main, title, desc) {
   const langSwitch = langs.map((l) => `<a href="${href(l, p)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"${l.lang === t.lang ? ' aria-current="true"' : ''}>${l.lang.toUpperCase()}</a>`).join('');
@@ -670,7 +697,7 @@ function emit(t, p, main, title, desc) {
   urls.push(SITE + href(t, p));
 }
 for (const t of langs) {
-  const titles = { '/': t.meta.title, '/courses/': t.courses.title, '/teachers/': t.teachers.title, '/graduates/': t.graduates.title, '/about/': t.about.eyebrow, '/contact/': t.contact.eyebrow, '/offer/': t.offer.title };
+  const titles = { '/': t.meta.title, '/courses/': t.courses.title, '/teachers/': t.teachers.title, '/graduates/': t.graduates.title, '/about/': t.about.eyebrow, '/partners/': t.partners.title, '/contact/': t.contact.eyebrow, '/offer/': t.offer.title };
   for (const [p, fn] of Object.entries(PAGES)) emit(t, p, fn(t), p === '/' ? t.meta.title : `${titles[p]} — FINANCE TEAM`, t.meta.description);
   for (const c of t.courses.items) emit(t, `/courses/${c.slug}/`, coursePage(t, c), `${c.title} — FINANCE TEAM`, c.short);
 }

@@ -15,7 +15,8 @@
     "contact": "Контакты",
     "offer": "Публичная оферта",
     "cta": "Записаться на курс",
-    "menu": "Меню"
+    "menu": "Меню",
+    "partners": "Партнёры"
   },
   "ui": {
     "more": "Подробнее",
@@ -503,5 +504,25 @@
   "footer": {
     "rights": "Все права защищены.",
     "langLabel": "Язык"
+  },
+  "partners": {
+    "eyebrow": "Партнёры",
+    "title": "Партнёрские организации",
+    "lead": "Организации в сфере бухгалтерии и налогов, с которыми мы сотрудничаем.",
+    "visit": "Перейти на сайт",
+    "items": [
+      {
+        "name": "ABR-CONSULTING",
+        "url": "https://abr-consulting.uz",
+        "logo": "partner-abr.webp",
+        "d": "Компания бухгалтерских и налоговых услуг"
+      },
+      {
+        "name": "TAXAUDIT",
+        "url": "https://taxaudit.uz",
+        "logo": "partner-taxaudit.webp",
+        "d": "Организация налоговых консультантов"
+      }
+    ]
   }
 }
