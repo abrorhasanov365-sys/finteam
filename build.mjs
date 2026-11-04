@@ -344,6 +344,7 @@ a.social:hover { border-color: var(--accent) }
 
 // ---------- components ----------
 const sampleBadge = (t, s) => (s ? `<span class="sample">${esc(t.ui.sample)}</span>` : '');
+const teacherIds = (c) => [].concat(c.teacher || []);
 const teacherById = (t, id) => t.teachers.items.find((m) => m.id === id);
 const courseUrl = (t, c) => href(t, `/courses/${c.slug}/`);
 
@@ -368,7 +369,7 @@ function shield(m, alt) {
 }
 
 function teacherCard(t, m, full) {
-  const courses = t.courses.items.filter((c) => c.teacher === m.id);
+  const courses = t.courses.items.filter((c) => teacherIds(c).includes(m.id));
   return `<article class="person" id="${esc(m.id)}">
     ${shield(m, m.name)}
     <div>
@@ -594,7 +595,7 @@ ${ctaBand(t)}`;
 };
 
 function coursePage(t, c) {
-  const m = teacherById(t, c.teacher);
+  const ms = teacherIds(c).map((id) => teacherById(t, id)).filter(Boolean);
   const facts = [
     [t.ui.duration, c.duration], [t.ui.lessons, c.lessons], [t.ui.format, c.format],
     [t.ui.schedule, c.schedule], [t.ui.start, c.start], [t.ui.level, c.level],
@@ -608,7 +609,7 @@ function coursePage(t, c) {
     <div><h2>${esc(t.ui.audience)}</h2><ul class="ticks">${c.audience.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>
     <div><h2>${esc(t.ui.program)}</h2><ol class="modules" style="margin:0;padding:0">${c.program.map((p) => `<li><h3>${esc(p.t)}</h3><p>${esc(p.d)}</p></li>`).join('')}</ol></div>
     <div><h2>${esc(t.ui.outcomes)}</h2><ul class="ticks">${c.outcomes.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>
-    ${m ? `<div><h2>${esc(t.ui.teacher)}</h2><a class="mini-teacher" href="${href(t, '/teachers/')}#${esc(m.id)}" style="text-decoration:none">${shield(m, m.name)}<div class="person"><div><h3>${esc(m.name)}</h3><p class="role">${esc(m.role)}</p>${m.exp ? `<p class="exp">${esc(m.exp)}</p>` : ''}</div></div></a></div>` : ''}
+    ${ms.length ? `<div><h2>${esc(t.ui.teacher)}</h2><div style="display:grid;gap:20px">${ms.map((m) => `<a class="mini-teacher" href="${href(t, '/teachers/')}#${esc(m.id)}" style="text-decoration:none">${shield(m, m.name)}<div class="person"><div><h3>${esc(m.name)}</h3><p class="role">${esc(m.role)}</p>${m.exp ? `<p class="exp">${esc(m.exp)}</p>` : ''}</div></div></a>`).join('')}</div></div>` : ''}
   </div>
   ${enrollCard(t, c)}
 </div></section>`;

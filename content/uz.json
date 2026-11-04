@@ -98,7 +98,10 @@
         "schedule": "Haftada 3 marta, 2 soatdan",
         "start": "",
         "price": "",
-        "teacher": "abror-hasanov",
+        "teacher": [
+          "abror-hasanov",
+          "abdurasul-mirzohamdamov"
+        ],
         "audience": [
           "Buxgalteriyani noldan o'rganmoqchi bo'lganlar",
           "Iqtisodiyot yo'nalishidagi talabalar",
@@ -363,6 +366,20 @@
           "Soliq yukini optimallashtirish, soliq tekshiruvlariga tayyorlash va soliq masalalari bo'yicha maslahat beradi. 1C va Soliq kurslarini olib boradi."
         ],
         "photo": "teacher-olim-chulliyev.webp"
+      },
+      {
+        "id": "abdurasul-mirzohamdamov",
+        "name": "Abdurasul Mirzohamdamov",
+        "role": "Buxgalter",
+        "exp": "3 yillik tajriba",
+        "tags": [
+          "Boshlang'ich buxgalteriya"
+        ],
+        "bio": [
+          "3 yillik tajriba: foyda solig'i va QQS hisobotlarini tayyorlash, buxgalteriya hujjatlarini yuritish, eksport-import operatsiyalari hisobi.",
+          "Boshlang'ich buxgalteriya kursini olib boradi."
+        ],
+        "photo": ""
       }
     ]
   },
