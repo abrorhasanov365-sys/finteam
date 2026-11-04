@@ -563,7 +563,7 @@ function coursePage(t, c) {
 </div></section>`;
 }
 
-const NAV = ['courses', 'teachers', 'graduates', 'about', 'contact'];
+const NAV = ['about', 'courses', 'teachers', 'graduates', 'contact'];
 
 function layout(t, p, main, title, desc) {
   const langSwitch = langs.map((l) => `<a href="${href(l, p)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"${l.lang === t.lang ? ' aria-current="true"' : ''}>${l.lang.toUpperCase()}</a>`).join('');
