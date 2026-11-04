@@ -19,12 +19,14 @@ FINANCE TEAM o'quv markazi sayti (o'zbek va rus tillarida). Statik sayt, Vercel'
 
 ## Kursga yozilish arizalari
 
-Forma arizani `api/enroll.js` orqali Telegram botga yuboradi. Vercel → Settings → Environment Variables:
+Forma arizani `api/enroll.js` orqali Telegram botga va Google Sheets jadvaliga yuboradi. Vercel → Settings → Environment Variables:
 
 - `TELEGRAM_BOT_TOKEN` — @BotFather bergan token
-- `TELEGRAM_CHAT_ID` — arizalar keladigan chat/guruh ID
+- `TELEGRAM_CHAT_ID` — arizalar keladigan chat ID (@Financeteam_TM botga /start yozadi, keyin getUpdates orqali olinadi)
+- `SHEETS_WEBHOOK_URL` — Google Apps Script web app manzili (kod: `tools/arizalar-sheet.gs`)
+- `SHEETS_SECRET` — skriptdagi `SECRET` bilan bir xil maxfiy so'z
 
-Bular kiritilmaguncha forma xato beradi va foydalanuvchiga Telegram/telefon orqali bog'lanishni taklif qiladi.
+Kamida bittasi sozlangan bo'lsa forma ishlaydi. Hech biri bo'lmasa, forma foydalanuvchiga Telegram/telefon orqali bog'lanishni taklif qiladi.
 
 ## Yig'ish
 
