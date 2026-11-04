@@ -1,0 +1,276 @@
+{
+  "lang": "uz",
+  "htmlLang": "uz-Latn",
+  "prefix": "",
+  "meta": {
+    "title": "FINANCE TEAM — buxgalteriya va moliya o'quv markazi",
+    "description": "FINANCE TEAM o'quv markazi: buxgalteriya hisobi, 1C, soliq hisobi, MHXS (IFRS) va Excel kurslari. Amaliy bilim, tajribali mutaxassislar, Toshkent."
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "courses": "Kurslar",
+    "teachers": "O'qituvchilar",
+    "graduates": "Bitiruvchilar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "offer": "Ommaviy oferta",
+    "cta": "Kursga yozilish",
+    "menu": "Menyu"
+  },
+  "ui": {
+    "more": "Batafsil",
+    "allCourses": "Barcha kurslar",
+    "allTeachers": "Barcha o'qituvchilar",
+    "allGraduates": "Barcha bitiruvchilar",
+    "duration": "Davomiyligi",
+    "lessons": "Darslar",
+    "format": "Format",
+    "schedule": "Jadval",
+    "start": "Boshlanishi",
+    "price": "Narxi",
+    "priceTbd": "Aniqlanmoqda",
+    "level": "Daraja",
+    "teacher": "O'qituvchi",
+    "teaches": "Kurslari",
+    "experience": "Tajriba",
+    "audience": "Kurs kimlar uchun",
+    "program": "Kurs dasturi",
+    "outcomes": "Kurs yakunida siz",
+    "module": "Modul",
+    "sample": "Namuna: haqiqiy ma'lumot keyinroq qo'shiladi",
+    "soon": "Tez orada qo'shiladi",
+    "linkSoon": "havola tez orada",
+    "course": "Kurs",
+    "workplace": "Ish joyi",
+    "position": "Lavozimi",
+    "graduated": "Bitirgan",
+    "backToCourses": "Barcha kurslarga qaytish"
+  },
+  "home": {
+    "eyebrow": "Buxgalteriya va moliya o'quv markazi",
+    "title": "Moliya va buxgalteriya ta'limi",
+    "accent": "buxgalteriya",
+    "lead": "Amaliy bilimlar, real tajriba va muvaffaqiyatli kelajak uchun. Darslarni amaliyotchi buxgalterlar, auditorlar va soliq maslahatchilari olib boradi.",
+    "primary": "Kurslarni ko'rish",
+    "secondary": "Bepul maslahat",
+    "panelTitle": "Yaqin guruhlar",
+    "features": [
+      { "t": "Amaliy yondashuv", "d": "Har bir mavzu real korxona hujjatlari, provodkalar va hisobotlar ustida ishlab o'rganiladi." },
+      { "t": "Tajribali mutaxassislar", "d": "O'qituvchilarimiz kundalik ishida buxgalteriya, audit va soliq amaliyoti bilan shug'ullanadi." },
+      { "t": "Zamonaviy dasturlar", "d": "Kurslar amaldagi BHMS, Soliq kodeksi va MHXS talablariga moslab muntazam yangilanadi." },
+      { "t": "Ishga tayyorgarlik", "d": "Bitiruvchilarga rezyume, suhbatga tayyorgarlik va hamkor kompaniyalarga tavsiya bo'yicha yordam beramiz." }
+    ],
+    "coursesTitle": "Kurslarimiz",
+    "coursesLead": "Noldan boshlovchilar uchun ham, malakasini oshirmoqchi bo'lgan amaliyotchilar uchun ham.",
+    "teachersTitle": "Darslarni kimlar olib boradi",
+    "graduatesTitle": "Bitiruvchilarimiz natijalari",
+    "graduatesLead": "Kursni tamomlagan tinglovchilarimiz bugun qayerda ishlayapti.",
+    "ctaTitle": "Qaysi kurs sizga mos kelishini bilmayapsizmi?",
+    "ctaLead": "Telegramda yozing yoki qo'ng'iroq qiling: darajangizni aniqlab, mos kursni tavsiya qilamiz."
+  },
+  "courses": {
+    "eyebrow": "Kurslar",
+    "title": "Kurslar va dasturlar",
+    "lead": "Har bir kurs sahifasida dastur, davomiyligi, narxi va yozilish shakli bor.",
+    "items": [
+      {
+        "slug": "buxgalteriya-noldan",
+        "sample": true,
+        "title": "Buxgalteriya hisobi: noldan amaliyotgacha",
+        "short": "Buxgalteriya asoslari, hisobvaraqlar rejasi, provodkalar va moliyaviy hisobotlarni noldan o'rganing.",
+        "level": "Boshlang'ich",
+        "duration": "3 oy",
+        "lessons": "36 dars",
+        "format": "Oflayn va onlayn",
+        "schedule": "Haftada 3 marta, 2 soatdan",
+        "start": "",
+        "price": "",
+        "teacher": "teacher-1",
+        "audience": ["Buxgalteriyani noldan o'rganmoqchi bo'lganlar", "Iqtisodiyot yo'nalishidagi talabalar", "O'z biznesining hisobini tushunmoqchi bo'lgan tadbirkorlar"],
+        "program": [
+          { "t": "Buxgalteriya hisobi asoslari", "d": "Aktiv, passiv, ikki yoqlama yozuv, BHMS tizimi." },
+          { "t": "Hisobvaraqlar rejasi va provodkalar", "d": "21-son BHMS bo'yicha hisobvaraqlar, asosiy xo'jalik operatsiyalari." },
+          { "t": "Pul mablag'lari va hisob-kitoblar", "d": "Kassa, bank, mol yetkazib beruvchilar va xaridorlar bilan hisob-kitob." },
+          { "t": "Tovar-moddiy zaxiralar va asosiy vositalar", "d": "Kirim, chiqim, amortizatsiya, inventarizatsiya." },
+          { "t": "Ish haqi va soliqlar", "d": "Ish haqi hisoblash, JShDS, ijtimoiy soliq, asosiy soliq hisobotlari." },
+          { "t": "Moliyaviy hisobot", "d": "Buxgalteriya balansi va moliyaviy natijalar to'g'risidagi hisobotni tuzish." }
+        ],
+        "outcomes": ["Asosiy xo'jalik operatsiyalari bo'yicha provodka bera olasiz", "Birlamchi hujjatlarni to'g'ri rasmiylashtirasiz", "Oddiy korxonaning moliyaviy hisobotini tuza olasiz", "Yordamchi buxgalter lavozimida ishlashga tayyor bo'lasiz"]
+      },
+      {
+        "slug": "1c-buxgalteriya",
+        "sample": true,
+        "title": "1C: Buxgalteriya (O'zbekiston uchun)",
+        "short": "1C dasturida hujjatlar kiritish, ombor, ish haqi va hisobotlarni amaliy topshiriqlar orqali o'rganing.",
+        "level": "Boshlang'ich va o'rta",
+        "duration": "1,5 oy",
+        "lessons": "18 dars",
+        "format": "Oflayn, kompyuter sinfida",
+        "schedule": "Haftada 3 marta, 2 soatdan",
+        "start": "",
+        "price": "",
+        "teacher": "teacher-2",
+        "audience": ["Buxgalteriya asoslarini biladiganlar", "1C ga o'tayotgan korxona xodimlari", "Yordamchi buxgalterlar"],
+        "program": [
+          { "t": "Dastur bilan tanishuv", "d": "Ma'lumotnomalar, sozlamalar, korxona ma'lumotlarini kiritish." },
+          { "t": "Bank va kassa", "d": "Bank ko'chirmalari, kassa orderlari, hisob-kitoblar." },
+          { "t": "Xarid va sotuv", "d": "Hisobvaraq-fakturalar, ombor hisobi, QQS." },
+          { "t": "Ish haqi", "d": "Xodimlar, tabel, ish haqi hisoblash va to'lash." },
+          { "t": "Oy yopish va hisobotlar", "d": "Amortizatsiya, xarajatlarni taqsimlash, aylanma qaydnoma, balans." }
+        ],
+        "outcomes": ["1C da kundalik operatsiyalarni mustaqil yuritasiz", "Oyni yopib, asosiy hisobotlarni chiqara olasiz", "Xatolarni topish va tuzatishni bilasiz"]
+      },
+      {
+        "slug": "soliq-hisobi",
+        "sample": true,
+        "title": "Soliq hisobi va hisobotlar",
+        "short": "QQS, foyda solig'i, aylanmadan olinadigan soliq, JShDS va ijtimoiy soliq: hisoblash va hisobot topshirish.",
+        "level": "O'rta",
+        "duration": "2 oy",
+        "lessons": "24 dars",
+        "format": "Oflayn va onlayn",
+        "schedule": "Haftada 3 marta, 2 soatdan",
+        "start": "",
+        "price": "",
+        "teacher": "teacher-1",
+        "audience": ["Amaliyotchi buxgalterlar", "Bosh buxgalter bo'lishni rejalashtirganlar", "Tadbirkorlar"],
+        "program": [
+          { "t": "Soliq tizimi va soliq rejimlari", "d": "Umumbelgilangan va soddalashtirilgan tartib, rejim tanlash." },
+          { "t": "Qo'shilgan qiymat solig'i", "d": "Hisoblash, hisobga olish, elektron hisobvaraq-fakturalar." },
+          { "t": "Foyda solig'i va aylanmadan olinadigan soliq", "d": "Soliq bazasi, chegirmalar, imtiyozlar." },
+          { "t": "JShDS va ijtimoiy soliq", "d": "Ish haqi soliqlari, imtiyozlar, hisobotlar." },
+          { "t": "Mol-mulk, yer va suv solig'i", "d": "Hisoblash tartibi va muddatlar." },
+          { "t": "Soliq tekshiruvlari", "d": "Kameral va sayyor tekshiruvlarga tayyorgarlik, tipik xatolar." }
+        ],
+        "outcomes": ["Asosiy soliqlarni mustaqil hisoblaysiz", "Soliq hisobotlarini my.soliq.uz orqali topshirasiz", "Soliq xatarlarini oldindan ko'ra olasiz"]
+      },
+      {
+        "slug": "mhxs-ifrs",
+        "sample": true,
+        "title": "MHXS (IFRS): xalqaro moliyaviy hisobot",
+        "short": "Xalqaro standartlar bo'yicha hisobot tuzish va milliy hisobotni MHXS ga transformatsiya qilish.",
+        "level": "Yuqori",
+        "duration": "3 oy",
+        "lessons": "36 dars",
+        "format": "Oflayn va onlayn",
+        "schedule": "Haftada 2 marta, 3 soatdan",
+        "start": "",
+        "price": "",
+        "teacher": "teacher-3",
+        "audience": ["Tajribali buxgalterlar va moliyachilar", "MHXS ga o'tayotgan korxonalar xodimlari", "ACCA DipIFR imtihoniga tayyorlanayotganlar"],
+        "program": [
+          { "t": "MHXS konseptual asoslari", "d": "Moliyaviy hisobot tarkibi, IAS 1, IAS 8." },
+          { "t": "Asosiy vositalar va ijara", "d": "IAS 16, IAS 36, IFRS 16." },
+          { "t": "Tushum va moliyaviy instrumentlar", "d": "IFRS 15, IFRS 9, IAS 32." },
+          { "t": "Soliqlar va zaxiralar", "d": "IAS 12, IAS 37, IAS 2." },
+          { "t": "Konsolidatsiya asoslari", "d": "IFRS 10, IFRS 3, IAS 28." },
+          { "t": "Transformatsiya amaliyoti", "d": "BHMS hisobotini MHXS ga o'tkazish bo'yicha keys." }
+        ],
+        "outcomes": ["MHXS bo'yicha to'liq hisobot to'plamini tuza olasiz", "Transformatsiya tuzatishlarini mustaqil qilasiz", "DipIFR imtihoniga tayyorgarlik uchun asos olasiz"]
+      },
+      {
+        "slug": "excel-moliya",
+        "sample": true,
+        "title": "Excel moliyachilar uchun",
+        "short": "Formulalar, svodnaya jadvallar, moliyaviy modellar va hisobotlarni avtomatlashtirish.",
+        "level": "Boshlang'ich va o'rta",
+        "duration": "1 oy",
+        "lessons": "12 dars",
+        "format": "Oflayn, kompyuter sinfida",
+        "schedule": "Haftada 3 marta, 2 soatdan",
+        "start": "",
+        "price": "",
+        "teacher": "teacher-2",
+        "audience": ["Buxgalterlar va iqtisodchilar", "Moliya bo'limi xodimlari", "Talabalar"],
+        "program": [
+          { "t": "Asosiy formulalar", "d": "VLOOKUP/XLOOKUP, SUMIFS, IF, matn va sana funksiyalari." },
+          { "t": "Svodnaya jadvallar", "d": "Ma'lumotlarni guruhlash, filtrlash, hisobot tayyorlash." },
+          { "t": "Moliyaviy hisob-kitoblar", "d": "Kredit grafigi, NPV, IRR, byudjet." },
+          { "t": "Vizualizatsiya", "d": "Diagrammalar va boshqaruv hisobotlari." }
+        ],
+        "outcomes": ["Kundalik hisob-kitoblarni bir necha barobar tez bajarasiz", "Boshqaruv hisobotlarini mustaqil tuzasiz"]
+      }
+    ]
+  },
+  "teachers": {
+    "eyebrow": "O'qituvchilar",
+    "title": "Amaliyotchi mutaxassislar",
+    "lead": "Darslarni kundalik ishida buxgalteriya, audit va soliq bilan shug'ullanadigan mutaxassislar olib boradi.",
+    "items": [
+      { "id": "teacher-1", "sample": true, "name": "O'qituvchi ismi", "role": "Bosh buxgalter, soliq maslahatchisi", "exp": "10 yildan ortiq tajriba", "tags": ["Buxgalteriya hisobi", "Soliqlar"], "bio": ["O'qituvchi haqida qisqacha ma'lumot: ta'limi, ish joylari, sertifikatlari va qaysi kurslarni olib borishi."], "photo": "" },
+      { "id": "teacher-2", "sample": true, "name": "O'qituvchi ismi", "role": "1C va Excel bo'yicha mutaxassis", "exp": "8 yildan ortiq tajriba", "tags": ["1C: Buxgalteriya", "Excel"], "bio": ["O'qituvchi haqida qisqacha ma'lumot: ta'limi, ish joylari, sertifikatlari va qaysi kurslarni olib borishi."], "photo": "" },
+      { "id": "teacher-3", "sample": true, "name": "O'qituvchi ismi", "role": "Auditor, MHXS bo'yicha mutaxassis", "exp": "12 yildan ortiq tajriba", "tags": ["MHXS (IFRS)", "ACCA DipIFR", "Audit"], "bio": ["O'qituvchi haqida qisqacha ma'lumot: ta'limi, ish joylari, sertifikatlari va qaysi kurslarni olib borishi."], "photo": "" }
+    ]
+  },
+  "graduates": {
+    "eyebrow": "Bitiruvchilar",
+    "title": "Bitiruvchilarimiz natijalari",
+    "lead": "Kursni tamomlab, ishga joylashgan yoki lavozimi oshgan tinglovchilarimiz.",
+    "items": [
+      { "sample": true, "name": "Bitiruvchi ismi", "course": "Buxgalteriya hisobi: noldan amaliyotgacha", "year": "2025", "company": "Kompaniya nomi", "position": "Buxgalter", "quote": "Bitiruvchining kurs haqidagi qisqa fikri shu yerda bo'ladi.", "photo": "" },
+      { "sample": true, "name": "Bitiruvchi ismi", "course": "Soliq hisobi va hisobotlar", "year": "2025", "company": "Kompaniya nomi", "position": "Bosh buxgalter", "quote": "Bitiruvchining kurs haqidagi qisqa fikri shu yerda bo'ladi.", "photo": "" },
+      { "sample": true, "name": "Bitiruvchi ismi", "course": "MHXS (IFRS): xalqaro moliyaviy hisobot", "year": "2025", "company": "Kompaniya nomi", "position": "MHXS bo'yicha mutaxassis", "quote": "Bitiruvchining kurs haqidagi qisqa fikri shu yerda bo'ladi.", "photo": "" },
+      { "sample": true, "name": "Bitiruvchi ismi", "course": "1C: Buxgalteriya (O'zbekiston uchun)", "year": "2025", "company": "Kompaniya nomi", "position": "Yordamchi buxgalter", "quote": "Bitiruvchining kurs haqidagi qisqa fikri shu yerda bo'ladi.", "photo": "" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Biz haqimizda",
+    "title": "Amaliy tajribaga asoslangan o'quv markazi",
+    "body": [
+      "FINANCE TEAM — buxgalteriya hisobi, soliqlar va moliya bo'yicha o'quv markazi. Maqsadimiz — tinglovchiga diplom emas, balki ertangi kundan ishda qo'llay oladigan bilim berish.",
+      "Darslarni amaliyotchi buxgalterlar, auditorlar va soliq maslahatchilari olib boradi. Shu sababli har bir mavzu real korxona misollari, hujjatlari va bugungi qonunchilik asosida o'tiladi.",
+      "Kichik guruhlar, kompyuter sinfi, uy vazifalari va o'qituvchi bilan doimiy aloqa — o'qish davomida ham, bitirgandan keyin ham."
+    ],
+    "values": [
+      { "t": "Amaliyot", "d": "Nazariya faqat amaliyotni tushunish uchun kerak bo'lgan hajmda." },
+      { "t": "Dolzarblik", "d": "Dasturlar qonunchilikdagi o'zgarishlarga qarab yangilanadi." },
+      { "t": "Natija", "d": "Muvaffaqiyatimiz bitiruvchilarimizning ish joyi va lavozimi bilan o'lchanadi." }
+    ],
+    "legalTitle": "Rekvizitlar",
+    "legal": [
+      { "k": "Tashkilot", "v": "THE FINANCE TEAM MCHJ" },
+      { "k": "STIR", "v": "" },
+      { "k": "Ta'lim faoliyati litsenziyasi", "v": "" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Aloqa",
+    "title": "Biz bilan bog'laning",
+    "lead": "Kurslar, narxlar va jadval bo'yicha savollaringizga javob beramiz.",
+    "phoneLabel": "Telefon",
+    "telegramLabel": "Telegram",
+    "emailLabel": "Elektron pochta",
+    "addressLabel": "Manzil",
+    "address": "",
+    "hoursLabel": "Ish vaqti",
+    "hours": "",
+    "socialsLabel": "Ijtimoiy tarmoqlar",
+    "write": "Telegramda yozish",
+    "call": "Qo'ng'iroq qilish",
+    "map": "Xaritada ochish",
+    "mapQuery": ""
+  },
+  "form": {
+    "title": "Kursga yozilish",
+    "lead": "Ma'lumotlaringizni qoldiring, administrator bir ish kuni ichida siz bilan bog'lanadi.",
+    "name": "Ismingiz",
+    "phone": "Telefon raqamingiz",
+    "telegram": "Telegram (ixtiyoriy)",
+    "comment": "Izoh (ixtiyoriy)",
+    "commentHint": "Masalan: qulay vaqt yoki onlayn/oflayn",
+    "consent": "Ommaviy oferta shartlari bilan tanishdim va shaxsga doir ma'lumotlarimni ishlashga roziman",
+    "submit": "Arizani yuborish",
+    "sending": "Yuborilmoqda…",
+    "ok": "Rahmat! Arizangiz qabul qilindi, tez orada siz bilan bog'lanamiz.",
+    "err": "Arizani yuborib bo'lmadi. Iltimos, biz bilan to'g'ridan-to'g'ri bog'laning:"
+  },
+  "offer": {
+    "eyebrow": "Hujjatlar",
+    "title": "Ommaviy oferta",
+    "draft": "Loyiha. Ushbu matn yurist tomonidan tekshirilgunga qadar dastlabki variant hisoblanadi."
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan.",
+    "langLabel": "Til"
+  }
+}
