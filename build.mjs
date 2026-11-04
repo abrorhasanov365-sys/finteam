@@ -604,6 +604,7 @@ function orgLd(t) {
     telephone: site.phones[0] ? tel(site.phones[0]) : undefined,
     address: t.contact.address ? { '@type': 'PostalAddress', streetAddress: t.contact.address, addressLocality: t.lang === 'ru' ? 'Ташкент' : 'Toshkent', addressCountry: 'UZ' } : undefined,
     hasMap: site.mapUrl || undefined,
+    openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:00', closes: '18:00' },
     sameAs: socials.length ? socials : undefined,
   };
 }
