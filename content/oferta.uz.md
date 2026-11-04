@@ -143,10 +143,11 @@
 ## 15. Ijrochi rekvizitlari
 
 - Nomi: «THE FINANCE TEAM» MCHJ
-- STIR: [to'ldiriladi]
-- Yuridik manzil: [to'ldiriladi]
-- Bank: [to'ldiriladi]
-- Hisob raqami: [to'ldiriladi]
-- Bank kodi (MFO): [to'ldiriladi]
+- STIR: 308149528
+- IFUT: 85590
+- Yuridik manzil: Toshkent shahri, Chilonzor tumani, Novza MFY, Muqimiy ko'chasi, 41/3-uy
+- Bank: "Biznesni rivojlantirish banki" ATB
+- Hisob raqami: 20208000005336899001
+- Bank kodi (MFO): 01037
+- Direktor: Xasanov A.N.
 - Telefon: +998 99 371 31 22
-- Elektron pochta: [to'ldiriladi]
