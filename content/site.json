@@ -2,12 +2,14 @@
   "url": "https://www.finteam.uz",
   "brand": "FINANCE TEAM",
   "legalName": "THE FINANCE TEAM MCHJ",
-  "phones": [],
+  "phones": [
+    "+998 99 371 31 22"
+  ],
   "email": "",
-  "telegram": "",
+  "telegram": "Financeteam_TM",
   "socials": {
-    "telegram": "",
-    "instagram": "",
+    "telegram": "https://t.me/financeteamcom",
+    "instagram": "https://www.instagram.com/financeteamuz/",
     "facebook": "",
     "youtube": ""
   }

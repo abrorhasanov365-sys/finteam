@@ -148,5 +148,5 @@
 - Bank: [to'ldiriladi]
 - Hisob raqami: [to'ldiriladi]
 - Bank kodi (MFO): [to'ldiriladi]
-- Telefon: [to'ldiriladi]
+- Telefon: +998 99 371 31 22
 - Elektron pochta: [to'ldiriladi]

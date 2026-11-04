@@ -409,7 +409,8 @@ function enrollCard(t, c) {
 }
 
 function socialsGrid(t) {
-  return `<div class="socials">${Object.keys(SOCIAL_NAMES).map((k) => {
+  const keys = Object.keys(SOCIAL_NAMES).filter((k) => site.socials[k]);
+  return `<div class="socials">${(keys.length ? keys : Object.keys(SOCIAL_NAMES)).map((k) => {
     const url = site.socials[k];
     return url
       ? `<a class="social" href="${esc(url)}" target="_blank" rel="noopener">${icon(k, 26)}<span><b>${SOCIAL_NAMES[k]}</b><small>${esc(url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))}</small></span></a>`
@@ -434,7 +435,7 @@ function contactList(t) {
     <div><dt>${esc(c.phoneLabel)}</dt><dd>${site.phones.length ? site.phones.map((p) => `<a href="tel:${tel(p)}">${esc(p)}</a>`).join('') : soon(t)}</dd></div>
     <div><dt>${esc(c.telegramLabel)}</dt><dd>${site.telegram ? `<a href="${tg(site.telegram)}" target="_blank" rel="noopener">@${esc(site.telegram.replace(/^@/, ''))}</a>` : soon(t)}</dd></div>
     ${site.email ? `<div><dt>${esc(c.emailLabel)}</dt><dd><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></dd></div>` : ''}
-    <div><dt>${esc(c.addressLabel)}</dt><dd>${c.address ? esc(c.address) : soon(t)}${c.mapQuery ? `<a href="https://maps.google.com/?q=${encodeURIComponent(c.mapQuery)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:15px">${esc(c.map)} ↗</a>` : ''}</dd></div>
+    <div><dt>${esc(c.addressLabel)}</dt><dd>${c.address ? esc(c.address) : soon(t)}${c.landmark ? `<span style="font-weight:400;color:var(--muted);font-size:15px">${esc(c.landmark)}</span>` : ''}${c.mapQuery ? `<a href="https://maps.google.com/?q=${encodeURIComponent(c.mapQuery)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:15px">${esc(c.map)} ↗</a>` : ''}</dd></div>
     <div><dt>${esc(c.hoursLabel)}</dt><dd>${c.hours ? esc(c.hours) : soon(t)}</dd></div>
   </dl>`;
 }
@@ -617,7 +618,7 @@ ${FONTS}
         ${site.phones.map((ph) => `<li><a href="tel:${tel(ph)}">${esc(ph)}</a></li>`).join('')}
         ${site.telegram ? `<li><a href="${tg(site.telegram)}" target="_blank" rel="noopener">Telegram: @${esc(site.telegram.replace(/^@/, ''))}</a></li>` : ''}
         ${site.email ? `<li><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></li>` : ''}
-        ${t.contact.address ? `<li>${esc(t.contact.address)}</li>` : ''}
+        ${t.contact.address ? `<li>${esc(t.contact.address)}${t.contact.landmark ? `<br>${esc(t.contact.landmark)}` : ''}</li>` : ''}
         ${!site.phones.length && !site.telegram ? `<li><a href="${href(t, '/contact/')}">${esc(t.contact.title)}</a></li>` : ''}
       </ul></div>
     </div>
